@@ -32,7 +32,7 @@ const handleClick = (element) => {
 const addMarker = (id) => {
   console.log(`We'll place a mark on square: ${id}`)  
   document.getElementById(id).innerHTML = currentMarker
-  checkForWin()
+  //checkForWin()
   
   // Arrange the above pieces into a single line of code
   // to add an X or O to the board to the DOM so it can be scene on the screen.
@@ -103,11 +103,11 @@ const diagonalWin = () =>
 const changeMarker = () => {
   // ternary operator: if it's an X make it an O, if O make it an X
   currentMarker = currentMarker === "X" ? "O" : "X"
-  if(currentMarker == "X"){
-    currentMarker = "O"
-} else{
-    currentMarker = "O"
-}
+//   if(currentMarker === "X"){
+//     currentMarker = "O"
+// } else{
+//     currentMarker = "X"
+// }
 }
 /////////////////////////////
 
@@ -124,6 +124,11 @@ const resetBoard = () => {
     squares[i].innerHTML = null
   }
   
+  board = [
+    ['','',''],
+    ['','',''],
+    ['','','']
+  ];
   // @TODO, Your code here: make sure to reset the array of arrays to empty for a new game
 }
 
