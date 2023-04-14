@@ -1,7 +1,18 @@
+body{
+  background-color: black;
+}
+
 td{
   height:150px;
   width:150px;
   text-align: center;
-  border: 5px solid black;
+  border: 5px solid #212529;
   font-size: 100px;
+  background: black;
+  font: ffffff;
+}
+
+
+.jumbotron{
+  background: black;
 }
